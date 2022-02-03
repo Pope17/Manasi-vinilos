@@ -1,0 +1,219 @@
+.work .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.work .content .workBx {
+    position: relative;
+    width: 265px;
+    height: 265px;
+    margin: 10px;
+    transition: .5s;
+    text-align: center;
+}
+
+.work .content .workBx .imgBx, 
+.work .content .workBx .textBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .content .workBx .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work .content .workBx .textBx {
+    background: black;
+    opacity: 0;
+    transition: .5s;
+    /* posible solucion
+    align-items: center; */
+}
+
+.work .content .workBx .textBx a {
+    text-decoration: none;
+    color: white;
+}
+
+.work .content .workBx .textBx > i {
+    font-size: 40px;
+}
+
+.work .content .workBx:hover .textBx {
+    opacity: .7;
+}
+
+.work .content .workBx .textBx {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    display: grid;
+    align-content: center;
+}
+
+/* .work .content .workBx .textBx {
+    display: flex;
+    color: white;
+    /* text-align: center; 
+    display: grid;
+    /* align-items: center; 
+    align-content: center;
+} */
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    position: relative;
+    color: cornflowerblue;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title p {
+    max-width: 700px;
+    display: inline-block;
+}
+
+.title h2::before {
+    content: '';
+    position: absolute;
+    left: 47.5%;
+    transform: translateY(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: black;
+}
+
+.title.white h2, .title.white P {
+    color: whitesmoke;
+}
+
+.title.white h2::before {
+    background: white;
+}
+
+.about {
+    background: black;
+    padding: 100px;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    /* padding: 100px; */
+}
+
+.about .content .textBx {
+    min-width: 49%;
+    width: 49%;
+}
+
+.about .content .textBx p {
+    color: white;
+}
+
+.about .content .imgBx {
+    margin-left: 40px;
+}
+
+.about .content .imgBx img {
+    max-width: 100%;
+}
+
+/* common */
+section {
+    /* padding: 100px; */
+    min-height: 100vh;
+}
+
+.banner {
+    /* position: relative;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+.banner .imgSidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 100%;
+}
+
+.banner .imgSidebar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .contentBx, .sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoText {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: black;
+    color: whitesmoke;
+    padding: 0px 5px;
+}
+
+.banner .contentBx h4 {
+    font-size: 1.5em;
+    color: black;
+    font-weight: 300;
+}
+
+.banner .contentBx h4  span {
+    color: cornflowerblue;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner .contentBx h2 {
+    font-size: 3em;
+    color: black;
+    line-height: 1em;
+} 
+
+p {
+    font-size: 1.1em;
+    margin: 20px 0px;
+    font-weight: 300;
+}
