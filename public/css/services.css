@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 100px 0px;
 }
 
 .work .content .workBx {
@@ -54,7 +54,7 @@
 }
 
 .work .content .workBx:hover .textBx {
-    opacity: .7;
+    opacity: .9;
 }
 
 .work .content .workBx .textBx {

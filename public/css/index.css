@@ -12,3 +12,26 @@
   background-position: center center;
   background-size: cover;
 }
+
+.wpp-fixed {
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+}
+
+.wpp-fixed a {
+  color: limegreen;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .wpp-fixed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer .group-one .box .social-midia .link-escondido {
+    display: none;
+  }
+}
