@@ -15,28 +15,36 @@
      <!--CSS Estilos-->
     <link rel="stylesheet" href="public/css/index.css">
     <link rel="stylesheet" href="public/css/services.css">
-    <link rel="stylesheet" href="public/css/footer_dos.css">
-    <link rel="stylesheet" href="public/css/navbar.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/home-page.css">
     <link rel="stylesheet" href="public/css/productos.css">
     <link rel="stylesheet" href="public/css/info-resumen.css">
+    <link rel="stylesheet" href="public/css/navbar.css">
 </head>
 <body>
-    <header class="navbar">
-        <a href="#" class="toggle" id="navHamburger">
-            <i class="fas fa-bars"></i>
-        </a>
-
-        <div class="links-wrapper">
-            <a href="#" class="link">Inicio</a>
-            <a href="#work" class="link">Servicios</a>
-            <a href="#" class="link">Productos</a>
-            <a href="#contacto-footer" class="link">Contacto</a>
+    <header class="header">
+        <a href="#" class="logo">Manasi Vinilos</a>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Trabajos</a></li>
+                <li><a href="#work">Servicio</a></li>
+                <li><a href="#footer-contact">Contacto</a></li>
+            </ul>
         </div>
     </header>
 
-    <main>
+    <div class="home-page" id="home">
+        <div class="header-content">
+            <p>VOLVE TUS IDEAS REALIDAD</p>
+            <h1>MANASI VINILOS</h1>
+            <a href="#work">COMENZEMOS</a>
+        </div>
+    </div>
 
-    <!-- icono-flotante-wpp -->
+    <main>
+<!-- icono-flotante-wpp -->
     <div class="wpp-fixed">
         <a href="#">
             <img src="/public/img/whatsapp-logo-1.png" alt="">
@@ -52,9 +60,9 @@
         <div class="servicios-wrapper">
             <main class="grid">
             <article>
-                <img src="/public/img/02266a13df48ba56d82cfdbb40ed0e7d.jpg" alt="">
+                <img src="/public/img/nasa.jpg" alt="">
                 <div class="text">
-                    <h3>Thanos</h3>
+                    <h3>NASA</h3>
                     <p>$40,00</p>
                     <div class="margen-interno"></div>
                     <a href="#">Info</a>
@@ -129,10 +137,10 @@
     </div>
 
     <!-- sobre-resumen -->
-    <div class="info-resumen">
+    <div class="info-resumen" id="">
         <div class="info-content">
             <div class="titulo-info">
-                <h2>ELEGI, COMPRA Y RECIBI SIN SALIR DE CASA</h2>
+                <h2>ELEGI, COMPRA Y RECIBI SIN SALIR DE TU CASA</h2>
             </div>
             <div class="info-info">
                 <p>
@@ -207,7 +215,7 @@
     <!--Formulario-->
     <div></div>
     </main>
-    <footer>
+    <footer id="footer-contact">
         <div class="group-one" id="contacto-footer">
             <div class="box">
                 <figure>
@@ -242,9 +250,20 @@
     </footer>
 </body>
 <script>
-    const navHamburger = document.querySelector("#navHamburger")
-    navHamburger.addEventListener("click", (e) => {
-        navHamburger.parentElement.classList.toggle("active");
-    })
+    const header = document.getElementById("header")
+    const toggle = document.getElementById("toggle");
+    const navbar = document.getElementById("navbar");
+
+    document.onclick = function(e){
+        if(e.target.id !== "header" && e.target.id !== "toggle" && e.target.id !== "navbar"){
+            toggle.classList.remove("active");
+            navbar.classList.remove("active");
+        }
+    }
+
+    toggle.onclick = function(){
+        toggle.classList.toggle("active");
+        navbar.classList.toggle("active")
+    }
 </script>
 </html>

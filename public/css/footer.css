@@ -1,68 +1,75 @@
-/* este footer no tiene mas uso */
-
-.pie {
+footer {
     width: 100%;
-    padding: 2rem 8%;
-    background-color: #0e0e0e;
+    background-color: #0a141d;
+}
+
+footer .group-one {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 20px;
+}
+
+footer .group-one .box figure {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.logo {
-    height: 80px;
-    margin-bottom: 1rem;
+footer .group-one .box figure img {
+    width: 220px;
 }
 
-.social-icons-container, .footer-menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
+footer .group-one .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
 
-.social-icon {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 10px;
+footer .group-one .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+footer .group-one .social-midia a {
+    display: inline-block;
     text-decoration: none;
-}
-
-.social-icon > i {
-    color: #f2f2f2;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
     font-size: 1.2rem;
-    transition: .2s;
 }
 
-.social-icon > i:hover {
+footer .group-one .social-midia a:hover {
     color: cornflowerblue;
 }
 
-.footer-menu-container {
-    list-style-type: none;
-    color: #f2f2f2;
-    font-size: 18px;
-}
-
-.menu-item {
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.menu-item:hover {
-    opacity: 1;
-}
-
-.copyright {
-    color:#f2f2f2;
-    opacity: 0.3;
+footer .span {
+    background-color: #0a1a2a;
+    padding: 15px 0px;
     text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    footer .group-one {
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 25px 0px;
+    }
+    footer .group-one .social-midia .link-escondio {
+        display: inline-block;
+    }
 }
