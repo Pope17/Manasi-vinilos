@@ -47,6 +47,11 @@
 .work .content .workBx .textBx a {
     text-decoration: none;
     color: white;
+    transition: .4s;
+}
+
+.work .content .workBx .textBx a i {
+    font-size: 30px;
 }
 
 .work .content .workBx .textBx > i {
@@ -64,6 +69,10 @@
     font-size: 1em;
     display: grid;
     align-content: center;
+}
+
+.work .content .workBx .textBx a:hover {
+    color: cornflowerblue;
 }
 
 /* .work .content .workBx .textBx {

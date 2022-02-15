@@ -16,28 +16,131 @@
     <link rel="stylesheet" href="public/css/index.css">
     <link rel="stylesheet" href="public/css/services.css">
     <link rel="stylesheet" href="public/css/footer_dos.css">
-
+    <link rel="stylesheet" href="public/css/navbar.css">
+    <link rel="stylesheet" href="public/css/productos.css">
+    <link rel="stylesheet" href="public/css/info-resumen.css">
 </head>
 <body>
-    <header class="inicio">
-        <div>
-            <div> 
-                <h1>Titulo</h1>
-            </div>
-            <!--nava-bar-->
-            <div>
-                <h2>nav-bar</h2>
-            </div>
+    <header class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <div class="links-wrapper">
+            <a href="#" class="link">Inicio</a>
+            <a href="#work" class="link">Servicios</a>
+            <a href="#" class="link">Productos</a>
+            <a href="#contacto-footer" class="link">Contacto</a>
         </div>
     </header>
+
     <main>
 
     <!-- icono-flotante-wpp -->
     <div class="wpp-fixed">
         <a href="#">
-            <i class="fab fa-whatsapp"></i>
+            <img src="/public/img/whatsapp-logo-1.png" alt="">
         </a>
     </div>
+
+    <!-- producto -->
+    <div class="servicios" id="productos">
+        <div class="servicios-title">
+            <h2>ULTIMOS PRODUCTOS</h2>
+        </div>
+
+        <div class="servicios-wrapper">
+            <main class="grid">
+            <article>
+                <img src="/public/img/02266a13df48ba56d82cfdbb40ed0e7d.jpg" alt="">
+                <div class="text">
+                    <h3>Thanos</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+
+            <article>
+                <img src="/public/img/491a1b07733b16e2d2e5ddeb8190c64b.jpg" alt="">
+                <div class="text">
+                    <h3>Marge</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            <article>
+                <img src="/public/img/62c71d7db86e16e21efb4c2bd67e3259.jpg" alt="">
+                <div class="text">
+                    <h3>Deal Pool Dibujo</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            <article>
+                <img src="/public/img/76dfec726e287a485001f996350d0a59.jpg" alt="">
+                <div class="text">
+                    <h3>Mate</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            <article>
+                <img src="/public/img/9dacc26796be0f462f01bb987945e4f7.jpg" alt="">
+                <div class="text">
+                    <h3>Rick y Morty</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            <article>
+                <img src="/public/img/b5a61392ef58d1df44a0600f13e02596.jpg" alt="">
+                <div class="text">
+                    <h3>Calamardo Cafe</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            <article>
+                <img src="/public/img/de8cbd19037a9a1f0270e7a3d8c718ca.jpg" alt="">
+                <div class="text">
+                    <h3>Tomy Agujero</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            <article>
+                <img src="/public/img/e3ea6ba7d337646191dc388739d0ef49.jpg" alt="">
+                <div class="text">
+                    <h3>Joker Bailando</h3>
+                    <p>$40,00</p>
+                    <div class="margen-interno"></div>
+                    <a href="#">Info</a>
+                </div>
+            </article>
+            </main>
+        </div>
+    </div>
+
+    <!-- sobre-resumen -->
+    <div class="info-resumen">
+        <div class="info-content">
+            <div class="titulo-info">
+                <h2>ELEGI, COMPRA Y RECIBI SIN SALIR DE CASA</h2>
+            </div>
+            <div class="info-info">
+                <p>
+                    Al momento de realizar tu pedido podes elegir envio a domicilio o no. En este caso vas a poder retirarlo por nuestro local o con un codigo dado por nosotros podras hacer un seguimientto de la entrega de tu paquete.
+                </p>
+            </div>
+        </div>
+    </div>    
 
     <!-- servicios -->
     <section class="work" id="work">
@@ -53,9 +156,11 @@
                     <img src="public/img/deco-img.jpg" alt="">
                 </div>
                 <div class="textBx">
-                    <i class="fas fa-pen"></i>
-                    <div class="espaciador" style="height: 10px;"></div>
-                    <a href="#"><h3>Deco</h3></a>
+                    <a href="#">
+                        <i class="fas fa-pen"></i>
+                        <div class="espaciador" style="height: 10px;"></div>
+                        <h3>Deco</h3>
+                    </a>
                 </div>
             </div>
 
@@ -64,9 +169,11 @@
                     <img src="public/img/ind-img.jpg" alt="">
                 </div>
                 <div class="textBx">
-                    <i class="fas fa-tshirt"></i>
-                    <div class="espaciador" style="height: 10px;"></div>
-                    <a href="#"><h3>INDUMENTARIA</h3></a>
+                    <a href="#">
+                        <i class="fas fa-tshirt"></i>
+                        <div class="espaciador" style="height: 10px;"></div>
+                        <h3>INDUMENTARIA</h3>
+                    </a>
                 </div>
             </div>
 
@@ -75,9 +182,11 @@
                     <img src="public/img/calcomanias-img.jpg" alt="">
                 </div>
                 <div class="textBx">
-                    <i class="fas fa-icons"></i>
-                    <div class="espaciador" style="height: 10px;"></div>
-                    <a href="#"><h3>Stickers & volantes</h3></a>
+                    <a href="#">
+                        <i class="fas fa-icons"></i>
+                        <div class="espaciador" style="height: 10px;"></div>
+                        <h3>Stickers & volantes</h3>
+                    </a>
                 </div>
             </div>
 
@@ -86,9 +195,11 @@
                     <img src="public/img/personalizado-img.jpg" alt="">
                 </div>
                 <div class="textBx">
-                    <i class="fas fa-box-open"></i>
-                    <div class="espaciador" style="height: 10px;"></div>
-                    <a href="#"><h3>Personalizados (regalos)</h3></a>
+                    <a href="#">
+                        <i class="fas fa-box-open"></i>
+                        <div class="espaciador" style="height: 10px;"></div>
+                        <h3>Personalizados (regalos)</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -96,28 +207,8 @@
     <!--Formulario-->
     <div></div>
     </main>
-    <!-- <footer>
-        <div class="pie">
-            <img class = "logo" src="public/img/logo-footer.jpg" alt="">
-            <div class="social-icons-container">
-                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" class="social-icon"><i class="fas fa-store"></i></a>
-            </div>
-            <ul class="footer-menu-container">
-                <li class="menu-item">Legal</li>
-                <li class="menu-item">Cookies</li>
-                <li class="menu-item">Contacto</li>
-                <li class="menu-item">privacidad</li>
-                <li class="menu-item">Refounds</li>
-            </ul>
-            <span class="copyright">&copy;2022, Manasi Vinilos. Todos los derechos reservados.</span>
-        
-        </div>
-    </footer> -->
     <footer>
-        <div class="group-one">
+        <div class="group-one" id="contacto-footer">
             <div class="box">
                 <figure>
                     <img src="public/img/logo-footer.jpg" alt="logo-manasi">
@@ -150,4 +241,10 @@
         <div class="span">&copy;2022, Manasi Vinilos. Todos los derechos reservados.</div>
     </footer>
 </body>
+<script>
+    const navHamburger = document.querySelector("#navHamburger")
+    navHamburger.addEventListener("click", (e) => {
+        navHamburger.parentElement.classList.toggle("active");
+    })
+</script>
 </html>
